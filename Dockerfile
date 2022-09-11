@@ -8,7 +8,7 @@ FROM ubuntu:22.04
 RUN apt-get -y update
 RUN apt-get -y install apache2
 
-RUN echo 'Docker Image<br>'   > /var/www/html/index.html
+RUN echo 'Docker Image on PRODUCTION!<br>'   > /var/www/html/index.html
 RUN echo '<b><font color="magenta">Version 1.2</font></b>' >> /var/www/html/index.html
 
 CMD ["/usr/sbin/apache2ctl", "-D","FOREGROUND"]
